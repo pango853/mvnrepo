@@ -17,8 +17,16 @@
 <p class="en">build.gradle example.</p>
 <p class="jp">build.gradleに以下のようなリポジトリーを追加して下さい。</p>
 <pre>
+springVersion = "6.1.2"
+
 repositories {
-    maven { url 'http://pango853.github.io/mvnrepo' }
+	maven { url 'https://pango853.github.io/mvnrepo' }
+}
+
+dependencies {
+	compile group: 'info.hinemos', name: 'hinemos-common', version: hinemos.version
+	compile group: 'info.hinemos', name: 'hinemos-client-ws', version: hinemos.version
+	compile group: 'info.hinemos', name: 'hinemos-agent-ws', version: hinemos.version
 }
 </pre>
 <hr>

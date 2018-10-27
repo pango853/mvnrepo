@@ -1,6 +1,6 @@
 # Pango's Maven Repository
 
-http://pango853.github.io/mvnrepo
+https://pango853.github.io/mvnrepo/index.html
 
 
 # Acknowledgements
@@ -20,10 +20,17 @@ They are not yet available in the central Maven repository so I created this rep
 build.gradleに以下のようにリポジトリを追加すれば利用可能。
 
     # build.gradle
+    springVersion = "6.1.2"
+    
     repositories {
-        maven { url 'http://pango853.github.io/mvnrepo' }
+        maven { url 'https://pango853.github.io/mvnrepo' }
     }
-
+    
+	dependencies {
+		compile group: 'info.hinemos', name: 'hinemos-common', version: hinemos.version
+		compile group: 'info.hinemos', name: 'hinemos-client-ws', version: hinemos.version
+		compile group: 'info.hinemos', name: 'hinemos-agent-ws', version: hinemos.version
+	}
 
 # References
 Regarding Hinemos, please refer to their official GitHub project page for more details.

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Oct 27 13:56:50 GMT+09:00 2018
+agent-ws-6.1.2.jar>=
+agent-ws-6.1.2.pom>=
