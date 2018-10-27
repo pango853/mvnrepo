@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>intel.management.wsman</groupId>
+  <artifactId>intel-wsman</artifactId>
+  <versioning>
+    <release>1.0.1-mod</release>
+    <versions>
+      <version>1.0.1-mod</version>
+    </versions>
+    <lastUpdated>20181027020540</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.snmp4j</groupId>
+  <artifactId>snmp4j</artifactId>
+  <versioning>
+    <release>2.3.1-mod</release>
+    <versions>
+      <version>2.3.1-mod</version>
+    </versions>
+    <lastUpdated>20181027020146</lastUpdated>
+  </versioning>
+</metadata>
