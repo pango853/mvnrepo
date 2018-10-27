@@ -22,6 +22,7 @@ $*
 
 /*
 !/.gitignore
+!/index.html
 
 !/info
 /info/*
