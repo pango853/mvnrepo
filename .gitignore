@@ -54,3 +54,13 @@ $*
 !/org/eclipse/persistence
 /org/eclipse/persistence/*
 !/org/eclipse/persistence/javax.persistence
+
+!/net
+/net/*
+!/net/sf
+/net/sf/*
+!/net/sf/jpasecurity
+/net/sf/*
+!/net/sf/jpasecurity
+/net/sf/jpasecurity/*
+!/net/sf/jpasecurity/jpasecurity-core
