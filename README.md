@@ -16,21 +16,44 @@ They are not yet available in the central Maven repository so I created this rep
 主にHinemosの開発にあたって、関連や依存アーカイブを置くつもりのMavenリポジトリーです。
 
 
-# HOWTO
+# HOW-TO
 build.gradleに以下のようにリポジトリを追加すれば利用可能。
 
-    # build.gradle
-    springVersion = "6.1.2"
-    
-    repositories {
-        maven { url 'https://pango853.github.io/mvnrepo' }
-    }
-    
-	dependencies {
-		compile group: 'info.hinemos', name: 'hinemos-common', version: hinemos.version
-		compile group: 'info.hinemos', name: 'hinemos-client-ws', version: hinemos.version
-		compile group: 'info.hinemos', name: 'hinemos-agent-ws', version: hinemos.version
+	# build.gradle
+	hinemosVersion = '6.1.2'
+
+	repositories {
+		maven { url 'https://pango853.github.io/mvnrepo' }
 	}
+	
+	dependencies {
+		compile group: 'info.hinemos', name: 'hinemos-common', version: hinemosVersion
+		compile group: 'info.hinemos', name: 'hinemos-client-ws', version: hinemosVersion
+		compile group: 'info.hinemos', name: 'hinemos-agent-ws', version: hinemosVersion
+	}
+
+
+# EXTEND THIS WORK
+
+> cd mvnrepo
+
+> mkdir TMP\extracted\
+
+Download, install if needed, and then copy JAR files to TMP\extracted\
+
+> mvn install:install-file -Dfile=TMP\extracted\HinemosCommon.jar -DgroupId=info.hinemos -DartifactId=hinemos-common -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+
+> mvn install:install-file -Dfile=TMP\extracted\HinemosManager.jar -DgroupId=info.hinemos -DartifactId=hinemos-manager -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+> mvn install:install-file -Dfile=TMP\extracted\HinemosModel.jar -DgroupId=info.hinemos -DartifactId=hinemos-model -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+> mvn install:install-file -Dfile=TMP\extracted\HinemosManagerCli.jar -DgroupId=info.hinemos -DartifactId=hinemos-manager-cli -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+
+> mvn install:install-file -Dfile=TMP\extracted\AgentWS.jar -DgroupId=info.hinemos -DartifactId=agent-ws -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+> mvn install:install-file -Dfile=TMP\extracted\HinemosAgent.jar -DgroupId=info.hinemos -DartifactId=hinemos-agent -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+
+> mvn install:install-file -Dfile=TMP\extracted\HinemosClient.jar -DgroupId=info.hinemos -DartifactId=hinemos-client -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+> mvn install:install-file -Dfile=TMP\extracted\ClientWS.jar -DgroupId=info.hinemos -DartifactId=client-ws -Dversion=5.0.4 -Dpackaging=jar -DlocalRepositoryPath=.
+
+
 
 # References
 Regarding Hinemos, please refer to their official GitHub project page for more details.
